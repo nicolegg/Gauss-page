@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6, figure {
     letter-spacing: 0;
 }
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
-    color: #fff;
+    color: #0000FF;
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
     color: #000;
@@ -1699,13 +1699,11 @@ h1, h2, h3, h4, h5, h6, figure {
     width:300px;
     background-position:center;
 }
-/*.detalle_curso { 
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    color: #ffffff; 
-    font-size: 18px; 
-    font-weight: 200; 
-    text-align: center; 
-    background: #16697a; 
-    overflow: hidden; 
-}*/
 .img-fluid{max-width:100%;height:auto}
+
+.letra{
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  
+}
