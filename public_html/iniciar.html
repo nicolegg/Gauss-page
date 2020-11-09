@@ -59,7 +59,6 @@
 
         <!-- Theme style  -->
         <link rel="stylesheet" href="css/style.css">
-        <link href="css/style-nuevo.css" rel="stylesheet" type="text/css"/>
 
         <!-- Modernizr JS -->
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -67,9 +66,12 @@
         <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
         <![endif]-->
+
     </head>
     <body>
+
         <div class="fh5co-loader"></div>
+
         <div id="page">
             <nav class="fh5co-nav" role="navigation">
                 <div class="top">
@@ -116,127 +118,54 @@
                 </div>
             </nav>
             <div class="largo">
-                <h1><font color="#ffffff"> DESCUBRE MÁS DE NOSOTROS</font></h1>
+                <h1><font color="#ffffff">ENVÍA TUS TRABAJOS PENDIENTES</font></h1>
             </div>
-            <br>
-            <div id="fh5co-about1">
-                <div class="container">                   
-                    <div class="col-md-12 animate-box caja1">
-                        <div class="col-md-6">
-                            <br><br>
-                            <h1><font color="#ffffff"> Reseña Histórica</font></h1>
-                            <p>“Preparar a los estudiantes para una vida útil y llena de gozo, desarrollando de manera integral 
-                                sus capacidades con principios y valores cristianos, para el servicio de Dios y la humanidad”</p>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="imagenes/ALUMNOS.jpg" alt="Free HTML5 Bootstrap Template">
-                        </div>
-                    </div> 
-                </div>
-                <div class="container">                   
-                    <div class="col-md-12 animate-box caja2">
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="imagenes/BRIGADAS.jpg" alt="Free HTML5 Bootstrap Template">
-                        </div>
-                        <br><br>
-                        <h1><font color="#ffffff"> Misión</font></h1>
-                        <p>“Preparar a los estudiantes para una vida útil y llena de gozo, desarrollando de manera integral 
-                            sus capacidades con principios y valores cristianos, para el servicio de Dios y la humanidad”<p>
-                    </div> 
-                </div>
-                <div class="container">                   
-                    <div class="col-md-12 animate-box caja3">
-                        <div class="col-md-6">
-                            <br><br>
-                            <h1><font color="#ffffff"> Visión</font></h1>
-                            <p>“Ser por la gracia de Dios, una institución reconocida por su excelencia,
-                                por sus principios y valores cristianos, con amplia participación en la comunidad”</p>
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-responsive" src="imagenes/juramentacion.jpg" alt="Free HTML5 Bootstrap Template">
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <br>
-            <section id="team">
-                <div id="fh5co-gallery" class="fh5co-bg-section">
-                    <div class="row text-center">
-                        <h2><span>NUESTRO VALORES</span></h2>
-                    </div>
+            <div id="fh5co-contact">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 wow fadeInUp animate-box">
-                            <div class="member">
-                                <img src="imagenes/respeto.jpg" class="img-fluid" alt="" >
-                                <div class="member-info">
-                                    <div class="member-info-content">
-                                        <h4>RESPETO</h4>
-                                        <span>Tratamos con dignidad y consideración a las personas, <br>al mundo que nos rodea y a nosotros mismos.</span>
-                                        <div class="social">
-                                            <a href=""><i class="fa fa-twitter"></i></a>
-                                            <a href=""><i class="fa fa-facebook"></i></a>
-                                            <a href=""><i class="fa fa-google-plus"></i></a>
-                                            <a href=""><i class="fa fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
+                        <div class="col-md-6 col-md-push-1 animate-box">
+                            <div class="fh5co-contact-info">
+                                <h3>Que responsable eres</h3>
+                                <div class="col-md-5 ">
+                                    <a class="gallery" style="background-image: url(imagenes/like.jpg);"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp animate-box">
-                            <div class="member">
-                                <img src="imagenes/integridad.png" class="img-fluid" alt="" >
-                                <div class="member-info">
-                                    <div class="member-info-content">
-                                        <h4>INTEGRIDAD</h4>
-                                        <span>La integridad es una de las cualidades más <br> importantes que podemos fomentar y que mejorará <br> todos los aspectos de nuestra vida. Sin integridad es <br>casi imposible tener una vida feliz y exitosa.</span>
-                                        <div class="social">
-                                            <a href=""><i class="fa fa-twitter"></i></a>
-                                            <a href=""><i class="fa fa-facebook"></i></a>
-                                            <a href=""><i class="fa fa-google-plus"></i></a>
-                                            <a href=""><i class="fa fa-linkedin"></i></a>
-                                        </div>
+                        <div class="col-md-6 animate-box">
+                            <h3>Enviar mi tarea!</h3>
+                            <form method="post" class="contactForm" action="enviarmensaje.php">
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <input type="text" id="fname" name="nombrealumno" class="form-control" placeholder="Nombres y Apellidos del alumno">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="lname" name="nombredocente" class="form-control" placeholder="Nombres y Apellidos del docente">
+                                    </div>                                  
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <input type="text" id="namecourse" name="nombrecurso" class="form-control" placeholder="Nombres del curso">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp animate-box">
-                            <div class="member">
-                                <img src="imagenes/compromiso.jpg" class="img-fluid" alt="" >
-                                <div class="member-info">
-                                    <div class="member-info-content">
-                                        <h4>COMPROMISO</h4>
-                                        <span>Cumplimos nuestras responsabilidades y metas con iniciativa, entusiasmo y perseverancia.</span>
-                                        <div class="social">
-                                            <a href=""><i class="fa fa-twitter"></i></a>
-                                            <a href=""><i class="fa fa-facebook"></i></a>
-                                            <a href=""><i class="fa fa-google-plus"></i></a>
-                                            <a href=""><i class="fa fa-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 wow fadeInUp animate-box">
-                            <div class="member">
-                                <img src="imagenes/empatia.png" class="img-fluid" alt="" >
-                                <div class="member-info">
-                                    <div class="member-info-content">
-                                        <h4>EMPATÍA</h4>
-                                        <span>Entendemos los sentimientos y el razonamiento de los demás, y actuamos con solidaridad.</span>
-                                        <div class="social">
-                                            <a href=""><i class="fa fa-twitter"></i></a>
-                                            <a href=""><i class="fa fa-facebook"></i></a>
-                                            <a href=""><i class="fa fa-google-plus"></i></a>
-                                            <a href=""><i class="fa fa-linkedin"></i></a>
-                                        </div>
+                                <div class="controls">
+                                    <input id="fichero1" type="file" style="display:none" name="fichero1">
+                                    <div class="input-append">
+                                        <input type="text" id="falso1" class="form-control" placeholder="Sube tu tarea aquí">
+                                        <a class="btn btn-file"><i class="fa fa-folder-open-o"></i> Seleccionar archivo</a>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Enviar tarea" name="enviar" class="btn btn-primary">
+                                </div>
+
+                            </form>		
                         </div>
                     </div>
+
                 </div>
-            </section>                    
-            <br><br>
+            </div>
+            <!--nuevo-->
             <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
                 <div class="overlay"></div>
                 <div class="container">
@@ -325,6 +254,9 @@
         <!-- Magnific Popup -->
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/magnific-popup-options.js"></script>
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+        <script src="js/google_map.js"></script>
         <!-- Count Down -->
         <script src="js/simplyCountdown.js"></script>
         <!-- Main -->
@@ -346,6 +278,16 @@
                 day: d.getDate(),
                 enableUtc: false
             });
+//            nuevo
+            $('.btn-file').on('click', function () {
+                $(this).parent().prev().click();
+            });
+            // Cuando el autentico cambia hace cambiar al falso
+            $('input[type=file]').on('change', function (e) {
+                $(this).next().find('input').val($(this).val());
+            });
+
         </script>
     </body>
 </html>
+
