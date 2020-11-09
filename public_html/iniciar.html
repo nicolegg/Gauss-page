@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8">
@@ -71,18 +66,6 @@ and open the template in the editor.
         <!--[if lt IE 9]>
         <script src="js/respond.min.js"></script>
         <![endif]-->
-        <style type="text/css">
-
-            #ti{
-                font-family: "Arial Black", Gadget, sans-serif;
-                animation: mymove 5s infinite;
-            }
-
-            @keyframes mymove {
-                from {color: white;}
-                to {color: red;}
-            } 
-        </style>
 
     </head>
     <body>
@@ -115,7 +98,7 @@ and open the template in the editor.
                                 <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Gauss<span>.</span></a></div>
                             </div>                            
                             <div class="col-xs-10 text-right menu-1 letra">                              
-                                  <ul>
+                                <ul>
                                     <li class="active" ><a href="index.html">Inicio</a></li>
                                     <li class="has-dropdown">
                                         <a href="#">Propuesta Educacional</a>
@@ -125,7 +108,7 @@ and open the template in the editor.
                                         </ul>
                                     </li>
                                     <li><a href="about.html">Nosotros</a></li>
-                                    <li><a href="actividades.html">Actividades</a></li>
+                                    <li><a href="pricing.html">Precios</a></li>
                                     <li><a href="contact.html">Contáctenos</a></li>
                                     <li class="btn-cta"><a href="iniciar.html"><span>Enviar tarea</span></a></li>
                                 </ul>                                
@@ -134,167 +117,116 @@ and open the template in the editor.
                     </div>
                 </div>
             </nav>
-
-            <aside id="fh5co-hero">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li style="background-image: url(imagenes/talle.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                        <div class="slider-text-inner">
-                                            <h1 class="heading-section"> </h1>
-                                            <h1> <a>  </a></h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(imagenes/lapiz.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                        <div class="slider-text-inner">
-                                            <h1 class="heading-section"> </h1>
-                                            <h1 id="ti"> El ÉXITO es la consecuencia directa de la PERSEVERANCIA </h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(imagenes/concurso.jpg);">
-                            <div class="overlay-gradient"></div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                                        <div class="slider-text-inner">
-                                            <h1 class="heading-section"> </h1>
-                                            <h1 id="ti">  "Todo ESFUERZO tiene su RECOMPENSA, sigue demostrando tu perseverancia y llegarás a la meta" ¡Que nada te detenga! </h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-
-            <div id="fh5co-course">
+            <div class="largo">
+                <h1><font color="#ffffff">ENVÍA TUS TRABAJOS PENDIENTES</font></h1>
+            </div>
+            <div id="fh5co-contact">
                 <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                            <h2> NUESTROS TALLERES</h2>
-                            <p> </p>
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="col-md-6 animate-box">
-                            <div class="course">
-                                <a href="#" class="course-img" style="background-image: url(imagenes/curso-mate.jpg);">
-                                </a>
-                                <div class="desc">
-                                    <h3><a href="#"> MATEMÁTICAS </a></h3>
-                                    <p> DESCRIPCION </p>
-                                    <span><a href="#" class="btn btn-primary btn-sm btn-course"> CONTACTANOS </a></span>
+                        <div class="col-md-6 col-md-push-1 animate-box">
+                            <div class="fh5co-contact-info">
+                                <h3>Que responsable eres</h3>
+                                <div class="col-md-5 ">
+                                    <a class="gallery" style="background-image: url(imagenes/like.jpg);"></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 animate-box">
-                            <div class="course">
-                                <a href="#" class="course-img" style="background-image: url(imagenes/curso-compu.jpg);">
-                                </a>
-                                <div class="desc">
-                                    <h3><a href="#"> COMPUTACIÓN  E &amp; INFORMÁTICA </a></h3>
-                                    <p> DETALLES. </p>
-                                    <span><a href="#" class="btn btn-primary btn-sm btn-course"> CONTACTANOS </a></span>
+                            <h3>Enviar mi tarea!</h3>
+                            <form method="post" class="contactForm" action="enviarmensaje.php">
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <input type="text" id="fname" name="nombrealumno" class="form-control" placeholder="Nombres y Apellidos del alumno">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="lname" name="nombredocente" class="form-control" placeholder="Nombres y Apellidos del docente">
+                                    </div>                                  
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box">
-                            <div class="course">
-                                <a href="#" class="course-img" style="background-image: url(imagenes/curso-fisica.jpg);">
-                                </a>
-                                <div class="desc">
-                                    <h3><a href="#"> DEPORTE &amp; </a></h3>
-                                    <p>DETALLES.</p>
-                                    <span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box">
-                            <div class="course">
-                                <a href="#" class="course-img" style="background-image: url(imagenes/curso-comu.png);">
-                                </a>
-                                <div class="desc">
-                                    <h3><a href="#"> COMUNICACIÓN</a></h3>
-                                    <p>  DETALLES .</p>
-                                    <span><a href="#" class="btn btn-primary btn-sm btn-course"> CONTACTANOS</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div id="fh5co-register" style="background-image: url(images/img_bg_2.jpg);">
-                <div class="overlay"></div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 animate-box">
-                        <div class="date-counter text-center">
-                            <h2>Get 400 of Online Courses for Free</h2>
-                            <h3>By Mike Smith</h3>
-                            <div class="simply-countdown simply-countdown-one"></div>
-                            <p><strong>Limited Offer, Hurry Up!</strong></p>
-                            <p><a href="#" class="btn btn-primary btn-lg btn-reg">Register Now!</a></p>
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <input type="text" id="namecourse" name="nombrecurso" class="form-control" placeholder="Nombres del curso">
+                                    </div>
+                                </div>
+                                <div class="controls">
+                                    <input id="fichero1" type="file" style="display:none" name="fichero1">
+                                    <div class="input-append">
+                                        <input type="text" id="falso1" class="form-control" placeholder="Sube tu tarea aquí">
+                                        <a class="btn btn-file"><i class="fa fa-folder-open-o"></i> Seleccionar archivo</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Enviar tarea" name="enviar" class="btn btn-primary">
+                                </div>
+
+                            </form>		
                         </div>
                     </div>
+
                 </div>
             </div>
+            <!--nuevo-->
             <footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row row-pb-md">
                         <div class="col-md-3 fh5co-widget">
-                            <h3>logo </h3>
-                            <p> Somos una institucion educativa privada ubicada en la ciudad autogestionaria de Huaycán, dedicados a impartir una educación basada en valores cristianos.</p>
+                            <h3>About Education</h3>
+                            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                            <h3> ENLACES DE INTERÉS </h3>
+                            <h3>Learning</h3>
                             <ul class="fh5co-footer-links">
-                                <li><a href="#"> NOSOTROS</a></li>
-                                <li><a href="#"> DOCENTES </a></li>
-                                <li><a href="#"> TALLERES </a></li>
-                                <li><a href="#"> ACTIVIDADES </a></li>
+                                <li><a href="#">Course</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Meetups</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                            <h3> ESTUDIA CON NOSOTROS </h3>
+                            <h3>Learn &amp; Grow</h3>
                             <ul class="fh5co-footer-links">
-                                <li><a href="#"> INICIAL </a></li>
-                                <li><a href="#"> PRIMARIA </a></li>
-                                <li><a href="#"> SECUNDARIA</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Handbook</a></li>
+                                <li><a href="#">Held Desk</a></li>
                             </ul>
                         </div>
 
                         <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-                            <h3> CONTACTANOS </h3>
+                            <h3>Engage us</h3>
                             <ul class="fh5co-footer-links">
-                                <li><a href="#"> CONTACTANOS </a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Visual Assistant</a></li>
+                                <li><a href="#">System Analysis</a></li>
+                                <li><a href="#">Advertise</a></li>
                             </ul>
                         </div>
 
+                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+                            <h3>Legal</h3>
+                            <ul class="fh5co-footer-links">
+                                <li><a href="#">Find Designers</a></li>
+                                <li><a href="#">Find Developers</a></li>
+                                <li><a href="#">Teams</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">&copy; 2020 - Derechos reservados por I.E.P. Karl Friedrich Gauss.</small> 
-                            <small class="block">Diseñado por <a href="https://www.nexo-consultores.com/" target="_blank"> Nexo Consultores </a> </small>
-                        </p>
+
+                    <div class="row copyright">
+                        <div class="col-md-12 text-center">
+                            <p>
+                                <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+                                <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexels</a></small>
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </footer>
         </div>
@@ -322,6 +254,9 @@ and open the template in the editor.
         <!-- Magnific Popup -->
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/magnific-popup-options.js"></script>
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+        <script src="js/google_map.js"></script>
         <!-- Count Down -->
         <script src="js/simplyCountdown.js"></script>
         <!-- Main -->
@@ -343,6 +278,15 @@ and open the template in the editor.
                 day: d.getDate(),
                 enableUtc: false
             });
+//            nuevo
+            $('.btn-file').on('click', function () {
+                $(this).parent().prev().click();
+            });
+            // Cuando el autentico cambia hace cambiar al falso
+            $('input[type=file]').on('change', function (e) {
+                $(this).next().find('input').val($(this).val());
+            });
+
         </script>
     </body>
 </html>
